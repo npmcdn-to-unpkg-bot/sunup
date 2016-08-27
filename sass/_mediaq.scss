@@ -1,0 +1,190 @@
+  @media (min-width: 320px) {
+    //header
+    .attachment-thumbnail {
+      margin: 0px 2px 5px 15px;
+    }
+    
+    header h1 {
+      //font-size: 0.7em;
+      padding-top: 4px;
+    }
+
+  }
+
+  @media (min-width: 480px) {
+  //header
+  header h1 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  //padding-top: 13px;
+  }
+
+  .attachment-thumbnail {
+    margin-top: 8px;
+  }
+
+  label[for="toggle"] {
+    top: 13px;
+  }
+
+  //overlay
+  .overlay-whole {
+    font-size: 30px;
+   }
+  }
+
+  @media (min-width: 768px) {
+  //overlay
+  .overlay-whole {
+    font-size: 40px;
+   }
+
+    //services image and text
+
+    .half, .half.services-content {
+      width: 48%;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 70px 0 80px;
+    }
+
+    .half.services-content {
+      text-align: justify;
+    }
+
+    .half img {
+      margin-top: 70px;
+    }
+    
+    .site-footer.clearfix {
+      margin-top: 80px;
+    }
+
+    .testimonial-wrapper-top-level {
+      float: left;
+    }
+
+    blockquote {
+      width: 60%;
+      float: right;
+    }
+    
+  .testimonial-logo-img {
+    float: left;
+    clear:both;
+    max-width: 190px;
+    }
+    
+    //this is a fluke that i need to change. The code isn't wraping my custom fieds right. But this works for now
+    .testimonial-content {
+      overflow: auto;
+      padding: 0 70px;
+    }
+
+    .info {
+      width: 40%;
+    }
+
+    .personal.info {
+      float: left;
+      text-align: left;
+     }
+
+    .contactinfo {
+      //float: right;
+      text-align: right;
+    }
+
+
+    //meet the team will go from block to inline
+    button.accordion {
+      text-align: left;
+    }
+    
+    .meet-the-team-wrapper {
+      padding-bottom: 80px;
+    }
+    .meet-the-team {
+      display: inline-block;
+    }
+    .info {
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .team-member.clearfix {
+      text-align: left;
+      padding: 0 10%;
+    }
+
+    h2.name, h3.role {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 940px) {
+    //mobile to full width nav
+    label[for="toggle"] {
+      display: none;
+    }
+
+    ul.menu li, ul.menu li a {
+      display: inline;
+    }
+
+    ul.menu {
+      top:0px;
+      //width: none;
+      //height: 80px;
+      margin-top: 24px;
+      text-align: right;
+      transition: none;
+      background-color: transparent;
+      text-transform: uppercase;
+    }
+
+    //make the bottom grey
+    .current-menu-item {
+      display: inline-block;
+      padding-bottom: 5px;
+      position: relative;
+    }
+
+    .current-menu-item:before{
+        content: "";
+        position: absolute;
+        width: 40px; //first three letters
+        height: 1px;
+        bottom: 0;
+        left: 18px;
+        border-bottom: 3px solid $accent;
+    }
+
+     //testimonial
+    .testimonial-content {
+      padding: 0 120px;
+    }
+    
+    //home overlay
+    .overlay-whole {
+      font-size: 60px;
+     }
+    
+  }
+
+  @media (min-width: 1024px) {
+    //footer
+    .dot-map-wrapper, .contact {
+      float:left;
+    }
+
+    .contact {
+      margin-left: 25%;
+    }
+
+    .contact::after {
+      content: '';
+      clear: both;
+    }
+  }

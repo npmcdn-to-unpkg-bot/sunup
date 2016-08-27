@@ -1,0 +1,126 @@
+
+a {
+	text-decoration: none;
+}
+
+/* paragraphs */
+
+p {
+	line-height: 1.5;
+}
+
+/*blockquotes*/
+
+blockquote {
+	//background: #F7F7F7;
+	margin: 0;
+	//padding: 20px;
+	p {
+		margin-top: 0;
+	}
+}
+
+/*tables*/
+
+table {
+	td {
+		padding: 10px;
+	}
+	tr td:first {
+		padding-right: 0;
+	}
+}
+
+/*def lists*/
+
+dt {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+dd {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+/*lists*/
+
+ul li, ol li {
+	padding: 3px;
+}
+
+/*PRE*/
+
+pre {
+	background: #F7F7F7;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+
+/*
+====================================
+Global Classes / Wordpress Specific
+====================================
+*/
+
+.aligncenter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+img {
+	&.alignleft {
+		padding-right: 5px;
+	}
+	&.alignright {
+		padding-left: 5px;
+	}
+}
+
+.clear {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+/*
+==========================================
+HEADER TYPOGRAPHY - ALLER ASSIGNMENT
+===========================================
+*/
+
+h1, h2, h3, h4, h5, h6, .menu {
+  font-family: 'allerregular', sans-serif;
+}
+
+/*
+=============================================
+MEET THE TEAM HEADERS
+=============================================
+*/
+
+h2.name {
+  font-size: 1.2em;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+h3.role {
+  font-size: 0.8em;
+  margin: 5px 0 15px 0;
+  letter-spacing: 1.75px;
+}
+
+

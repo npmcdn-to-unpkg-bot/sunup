@@ -1,0 +1,31 @@
+footer {
+	clear: both;
+  background: $main;
+  color: $accent;
+}
+
+.footer-contact-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.site-footer-wrapper {
+  text-align: center;
+}
+
+.site-footer {
+  text-align: left;
+}
+
+.site-footer ul li {
+  list-style-type: none;
+}
+
+.contact {
+  margin-bottom: 0;
+  padding: 30px 0 30px 53px;
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto;
+}

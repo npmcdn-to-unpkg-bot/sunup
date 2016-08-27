@@ -1,0 +1,87 @@
+.service-wrapper{
+  text-align: center;
+}
+
+.half.services-image img {
+  max-height: 450px;
+}
+
+.tenant_contact {
+  color: #fff;
+  display: block;
+  background-color: $main;
+  width: 100%;
+  height: 75px;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+//blockqute 
+blockquote{
+  display:block;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+
+  
+  /*Font*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+  text-align: justify;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+blockquote p:before {
+  position: absolute;
+  left: 18px;
+  top: -10px;
+}
+
+blockquote p:after {
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+//took after out again
+blockquote p:before, blockquote p:after {
+  content: "\0022";
+  font-size: 50px;
+  color: #333;
+  position: absolute;
+  transform: rotate(8deg);
+}
+
+//testimonial
+.testimonial-wrapper-top-level {
+  text-align: center;
+}
+
+.testimonial-content {
+  margin: 60px 0;
+}
+
+.testimonial-logo-img {
+  max-height: 150px;
+}
+
+.client-wrapper {
+  float: right;
+  clear: both;
+  text-align: right;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.half p {
+  text-align: justify;
+}
+
+.half img {
+  margin-top: 140px;
+}

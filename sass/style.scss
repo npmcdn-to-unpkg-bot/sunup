@@ -1,0 +1,255 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+/*
+====================================
+ALLER FONT LOADING
+====================================
+*/
+
+
+@font-face {
+    font-family: 'allerbold_italic';
+    src: url('fonts/aller_std_bdit-webfont.woff2') format('woff2'),
+         url('fonts/aller_std_bdit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alleritalic';
+    src: url('fonts/aller_std_it-webfont.woff2') format('woff2'),
+         url('fonts/aller_std_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'allerlight';
+    src: url('fonts/aller_std_lt-webfont.woff2') format('woff2'),
+         url('fonts/aller_std_lt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'allerlight_italic';
+    src: url('fonts/aller_std_ltit-webfont.woff2') format('woff2'),
+         url('fonts/aller_std_ltit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'allerregular';
+    src: url('fonts/aller_std_rg-webfont.woff2') format('woff2'),
+         url('fonts/aller_std_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'allerbold';
+    src: url('fonts/aller_std-webfont.woff2') format('woff2'),
+         url('fonts/aller_std-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@import 'normalize';
+@import 'homecontent';
+@import 'variables';
+@import 'services';
+@import 'accordion';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #333;
+  font-family: 'Raleway', sans-serif;
+  background-color: $accent;
+  background: url('images/lightest_subtle_dots.png');
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+
+/*
+============================================
+Flickity Styling
+============================================
+*/
+
+//flickity tweaks
+.carousel-cell {
+  width: 100%;
+  max-height: 600px;
+  margin-top: 30px;
+  font-family: 'allerbold', sans-serif;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 10px;
+}
+/* circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid $accent;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: $accent;
+}
+
+/*
+===========================================
+HEADER STYLING
+===========================================
+*/
+
+header {
+  width: 100%;
+  padding-top: 0.3em;
+  background-color: $main;
+  position: fixed;
+  z-index: 10;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.8em;
+  padding-top: 4px;
+}a{
+  color: #fff;
+}
+
+.attachment-thumbnail {
+  width: 42px;
+  height: 35px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 5px;
+ }
+
+
+/*
+=====================================
+OVERLAY FORMAT
+=====================================
+*/
+.overlay-whole, .overlay-whole a {
+  color: #fff;
+}
+
+.overlay-whole {
+  text-shadow: 0px 2px 10px #000;
+  font-size: 22px;
+  width: 55%;
+}
+
+.property-name {
+  padding: 5px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+  background-color: $main;
+}
+
+//the home text
+.centered-text, .centred-text, .main-content, .services-content, .about-content, .restrict-text {
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.restrict-text {
+  max-width: 575px;
+}
+
+//leasing
+body.page-id-8 .main-content {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+//services image
+body.page-id-12 .half {
+  text-align: center;
+}
+
+body.page-id-12 .half img {
+  max-height: 450px;
+}
+
+body.page-id-12 .site-footer, body.page-id-10 .site-footer {
+  margin-top: 70px;
+}
+
+.team-member.clearfix {
+  text-align: justify;
+}
+
+@import 'mediaq';
+
+

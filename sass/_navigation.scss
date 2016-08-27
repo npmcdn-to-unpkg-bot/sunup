@@ -1,0 +1,92 @@
+ul.menu, .menu ul {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline;
+		margin-right: 10px;
+		a {
+			color: #333;
+			padding: 10px;
+			color: $accent;
+		}
+	}
+}
+
+
+/* 
+==================================
+SLIDE OUT NAV START
+==================================
+*/
+
+.wrapper {
+  background-size:cover;
+  -webkit-transition: all 0.5s;
+  position: relative;
+  left:0;
+  width: 100%;
+}
+
+ul.menu {
+  position: fixed;
+  width:100%;
+  background:$main;
+  right:0;
+  left:0;
+  margin:0;
+  padding:0;
+  top: -100%;
+  z-index: 10;
+  -webkit-transition: all 0.5s;
+  text-align: center;
+}
+
+ul.menu li {
+  list-style: none;
+  display: block;
+}
+
+ul.menu li a {
+  display: block;
+  font-size:18px;
+  padding:0px 15px 15px 15px;
+  text-transform: uppercase;
+}
+
+input[type=checkbox]:checked ~ ul#menu-menu-1 {
+  top: 50px; //first time changing this was also 0
+}
+
+input[type=checkbox]:checked ~ .wrapper {
+  top: 100%;
+  width: 100%;
+  position: relative;
+}
+
+label[for="toggle"] {
+  z-index: 40;
+  display: block;
+  text-align: center;
+  background: $main;
+  height: 40px;
+  text-transform: uppercase;
+  color: $accent;
+  padding-top: 10px;
+  position: fixed; 
+  top: 3px;
+  right: 30px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.current-menu-item a {
+  padding: 0 5px 5px;
+}
+
+//TITLE LINK
+
+header h1 a {
+  color: $accent;
+}
