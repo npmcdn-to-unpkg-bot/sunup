@@ -9,7 +9,7 @@
 
   <?php // Load our CSS ?>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@1.2/dist/flickity.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
   <?php wp_head(); ?>

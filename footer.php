@@ -22,7 +22,7 @@
 </footer>
 </div><!-- /.wrapper -->
 
-<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.js"></script>
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.js"></script>
 
 
 <?php wp_footer(); ?>
